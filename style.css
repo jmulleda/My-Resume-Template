@@ -1,0 +1,289 @@
+/* fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+html {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body {
+    background: linear-gradient(0.25turn, #03045e, #0077b6);
+    margin: auto;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.blue-span {
+    color: #12bdff;
+}
+
+/* profile picture */
+
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 50%;
+    background-color:#274049;
+    border: 2px solid #12bdff;
+    box-shadow: 2px 2px 30px #12bdff;
+    
+}
+
+/* image control - looks like icons */
+
+.img-div {
+    width: 130px;
+    height: auto;
+}
+
+/* header style*/
+header {
+    background-color:#081921;
+    color:aliceblue;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: sticky; /* nav menu sticks to the top of the screen */
+    top: 0;
+}
+
+nav ul {
+    display: flex; /* horizontal menu bar */
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+nav ul li a:hover {
+    color: #12bdff;
+    border-bottom: 3px solid #12bdff;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* about section */
+
+.about-section {
+    background-color:#1b1f24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+}
+
+
+
+.about-section img {
+    border-radius: 50%;
+    background-color:#274049;
+    border: 2px solid #12bdff;
+    box-shadow: 2px 2px 30px #12bdff;
+
+}
+
+.about-section ol li {
+    list-style: none;
+    color:whitesmoke;
+    margin-left: 90px;
+
+}
+
+.about-section ol li h1 {
+    color:whitesmoke;
+    margin-bottom: 10px;
+    font-size: 50px;
+
+}
+
+.about-section li {
+
+    margin-bottom: 10px;
+    color: whitesmoke;
+
+}
+
+/* info section */
+
+.info-section {
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding: 100px auto;
+}
+
+.info-cards-container {
+    display: flex;
+    margin: 30px 30px;
+}
+
+.info-card {
+    background-color:#1b1f24;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.info-card:hover {
+    background-color: #274049;
+    box-shadow: 2px 5px 20px #1b1f24;
+}
+
+.info-card a {
+    color:#ffba53;
+
+}
+
+.info-card p {
+    color:aliceblue;
+    padding: 5px 0;
+}
+
+.info-card i {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* contact section */
+
+.contact-section {
+    background-color:#1b1f24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 80px;
+}
+
+.contact-section h1 {
+    color:whitesmoke;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+
+}
+.contact-section form input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+.submit-button {
+    font-weight: 900;
+    padding: 10px;
+    background-color: #12bdff;
+    color: whitesmoke;
+    border: 2px solid  #12bdff;
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #274049;
+    color: whitesmoke;
+}
+
+/* footer section */
+
+footer {
+    background-color:#081921;
+    color:whitesmoke;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+footer p {
+    font-size: 12px;
+    color:#969595;
+}
+
+footer p a {
+    color:whitesmoke;
+}
+
+footer p a:hover {
+    color:#03a9f4;
+}
+
+/* media queries  */
+
+@media (max-width: 700px) {
+    nav ul {
+        padding: 10px 10px;
+        flex-direction: row;
+        line-height: 3rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    /* info section */
+    .info-cards-container {
+        flex-direction: column;
+    }
+
+    .info-card {
+        margin: 10px 0;
+    }
+
+    /* about section media queries */
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section ol {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .about-section img {
+        height: auto;
+    }
+
+    .about-section ol li h1 {
+        font-size: 30px;
+    }
+
+    .about-section {
+        padding: 40px 30px;
+    }
+
+    /* contact section media queries */
+
+
+    .contact-section form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
